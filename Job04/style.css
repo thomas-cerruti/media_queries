@@ -1,0 +1,54 @@
+nav ul{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+
+}
+li{
+    width: 7rem;
+    list-style-type: none;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .burger {
+    display: none;
+  }
+
+  .burger:checked ~ ul {
+    display: flex;
+}
+
+  .hamburger {
+    display:block;
+    width: 3.4em;
+    height: 2.4em;
+    line-height: .1em;
+    border: 0.1em solid black;
+    padding: 0 .4em .4em;
+  }
+  
+  .hamburger hr {
+    color: #ddd;
+    height: .1em;
+    border: 0;
+    background: black;
+    border: none;
+  }
+
+@media (min-device-width:768px) { .hamburger{display:none} }
+
+
+@media (max-device-width:767px) {
+
+    nav ul{ 
+        flex-direction:column; 
+        display: none;
+        margin:0;
+        width:auto;  
+     }
+     
+    }

@@ -1,0 +1,35 @@
+section{
+    width: 300px;
+    height: 100px;
+    margin: 1rem;
+    background-color: #88c1d0;
+}
+figure{
+    margin:auto;
+    justify-items: center;
+}
+
+@media  (max-device-width:767px) {
+    figure {
+        display: flex;
+        flex-direction: column;
+        width:fit-content;
+    }
+
+}
+
+@media (min-device-width:768px) and (max-device-width:1599px) {
+    figure {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+ @media screen and (min-device-width:1600px) {
+    figure {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
